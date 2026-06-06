@@ -5,12 +5,27 @@ function Listy() {
 
   const listy = [
     {
-      imie: 'Kasia',
+      imie: 'Simon',
       zdjecie: 'https://placecats.com/200/200',
       wiadomosc: 'Jesteś najlepszą przyjaciółką na świecie! 🥰'
     },
     {
-      imie: 'Mama',
+      imie: 'Pakos',
+      zdjecie: 'https://placecats.com/201/200',
+      wiadomosc: 'Jestem z Ciebie taka dumna! ❤️'
+    },
+     {
+      imie: 'Madzia',
+      zdjecie: 'https://placecats.com/201/200',
+      wiadomosc: 'Jestem z Ciebie taka dumna! ❤️'
+    },
+     {
+      imie: 'Piotrek',
+      zdjecie: 'https://placecats.com/201/200',
+      wiadomosc: 'Jestem z Ciebie taka dumna! ❤️'
+    },
+     {
+      imie: 'Wiksa',
       zdjecie: 'https://placecats.com/201/200',
       wiadomosc: 'Jestem z Ciebie taka dumna! ❤️'
     },
@@ -27,16 +42,18 @@ function Listy() {
     )
   }
 
-  return (
-    <div>
-      <h1>💌 Listy od bliskich</h1>
+ return (
+  <div>
+    <h1>💌 Listy od bliskich</h1>
+    <div className="flex flex-col gap-3">
       {listy.map((osoba) => (
         <button key={osoba.imie} onClick={() => setWybrana(osoba)}>
           {osoba.imie}
         </button>
       ))}
     </div>
-  )
+  </div>
+)
 }
 
 export default Listy
