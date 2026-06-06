@@ -76,7 +76,7 @@ h2 {
 }
 
 h1 {
-  font-size: 56px;
+  font-size: 48px;
   letter-spacing: -1.68px;
   margin: 32px 0;
   @media (max-width: 1024px) {
@@ -118,4 +118,10 @@ h1, h2 {
 
 body {
   font-family: 'Libre Baskerville', serif;
+}
+
+body, html {
+  background-color: #a16207;
+  margin: 0;
+  padding: 0;
 }
