@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import './App.css'
+import Listy from './Listy'
+import Kalendarz from './Kalendarz'
 
 function App() {
   const [zakladka, setZakladka] = useState('home')
@@ -15,8 +17,8 @@ function App() {
 
       {zakladka === 'home' && <h1>Witaj! 🎉</h1>}
       {zakladka === 'test' && <h1>Test osobowości</h1>}
-      {zakladka === 'kalendarz' && <h1>Kalendarz</h1>}
-      {zakladka === 'listy' && <h1>Listy od bliskich</h1>}
+      {zakladka === 'kalendarz' && <Kalendarz />}
+      {zakladka === 'listy' && <Listy />}
     </div>
   )
 }
